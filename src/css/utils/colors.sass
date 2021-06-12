@@ -1,0 +1,29 @@
+// function
+@function pxToRem($value)
+    $result: $value / 16px + 0rem
+    @return $result
+
+//*********************
+//BREAKPOINTS
+//*********************
+
+// A map of breakpoints.
+$breakpoint-mobile-small-device: 20rem // 320px
+$breakpoint-mobile-device: 30rem // 480px
+$breakpoint-tablet-mobile-small: 32.5rem // 520px
+$breakpoint-tablet: 48rem // 768px
+$breakpoint-small-screen-laptop: 64rem // 1024px
+$breakpoint-mini-desktop: 85.5rem // 1366px
+$breakpoint-desktop: 100rem // 1600px
+$breakpoint-full-hd: 120rem // 1920px
+$breakpoint-1200: 1200px
+
+@mixin breakpoint($breakpoint, $is_min_width)
+
+    @if $is_min_width
+        @media (min-width: $breakpoint)
+            @content
+
+    @else
+        @media (max-width: $breakpoint)
+            @content

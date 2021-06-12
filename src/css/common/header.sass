@@ -1,0 +1,18 @@
+@import "../utils/colors"
+
+header.mdl-layout__header
+    background-color: white
+    color: #212121
+
+    .mdl-layout__header-row .mdl-navigation__link
+        color: #212121
+        font-size: 11px
+        padding: 0 15px
+        letter-spacing: .34px
+        font-weight: 500
+
+        @include breakpoint(breakpoint-mini-desktop, true)
+            font-size: 12.89px
+
+        &:hover
+            background-color: #908f8f2d

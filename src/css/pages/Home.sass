@@ -32,7 +32,9 @@
                 font-weight: 400
                 line-height: 1.1
                 margin-bottom: 22px
-                transition: slide 5s ease-in-out 1s
+                transform: translateY(150px)
+                opacity: 0
+                animation: slide 1.2s ease-out 0.3s forwards
 
             span.__sub-title
                 font-family: $fredoka_one
@@ -42,9 +44,15 @@
                 font-weight: 400
                 margin-bottom: 30px
                 display: block
+                transform: translateY(150px)
+                opacity: 0
+                animation: slide 1.2s ease-out 0.5s forwards
 
             a
                 display: inline-block
+                transform: translateY(150px)
+                opacity: 0
+                animation: slide 1.2s ease-out 0.5s forwards
 
             @include breakpoint($breakpoint-mini-desktop , false)
                 padding: 70px
@@ -205,12 +213,21 @@
                     &:last-child
                         margin-right: 0
 
+                    img
+                        &:hover
+                            &  + .card-content
+                                h3
+                                    color: $light-red
+
                     .card-content
                         padding: 20px
 
                         h3
                             line-height: 1.65
                             margin-bottom: 5px
+
+                            &:hover
+                                color: $light-red
 
                         p
                             line-height: 1.45
@@ -232,6 +249,7 @@
         background-position: top
         background-repeat: no-repeat
         background-size: cover
+        background-attachment: fixed
 
         @include breakpoint($breakpoint-tablet-mobile-small, false)
             padding-top: 40px
@@ -286,9 +304,9 @@
 
 @keyframes slide
     0%
-        transform: translate(100px)
+        transform: translateY(150px)
         opacity: 0
 
     100%
-        transform: translate(0px)
+        transform: translateY(0px)
         opacity: 1

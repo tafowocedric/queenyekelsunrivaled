@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { ROUTE_LINKS } from '../../utils/routing';
 import PublicContainer from '../container/PublicContainer';
 
@@ -13,7 +15,6 @@ import class_3 from '../../assets/home/class-3.png';
 import team_1 from '../../assets/home/team_1.webp';
 import team_2 from '../../assets/home/team_2.webp';
 import team_3 from '../../assets/home/team_3.webp';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -96,7 +97,7 @@ const Home = () => {
                                 <div className='card pd-b-10'>
                                     <img src={class_1} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
-                                        <Link to='/'>
+                                        <Link to={ROUTE_LINKS.NEWS}>
                                             <h3>Intelligent Challenge</h3>
                                         </Link>
                                         <p>The words you use in your written communica speak volumes. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, molestiae!</p>
@@ -108,7 +109,7 @@ const Home = () => {
                                 <div className='card pd-b-10'>
                                     <img src={class_2} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
-                                        <Link to='/'>
+                                        <Link to={ROUTE_LINKS.NEWS}>
                                             <h3>Intelligent Challenge</h3>
                                         </Link>
                                         <p>The words you use in your written communica speak volumes.</p>
@@ -120,7 +121,7 @@ const Home = () => {
                                 <div className='card pd-b-10'>
                                     <img src={class_3} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
-                                        <Link to='/'>
+                                        <Link to={ROUTE_LINKS.NEWS}>
                                             <h3>Intelligent Challenge</h3>
                                         </Link>
                                         <p>The words you use in your written communica speak volumes.</p>

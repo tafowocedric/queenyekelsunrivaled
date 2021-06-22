@@ -15,11 +15,11 @@ const PublicFooter = ({ use_image }) => {
         <footer className='queen-footer mg-t-40'>
             {use_image && (
                 <div className='footer-image flex'>
-                    <img src={footer_1} alt='footer' />
-                    <img src={footer_2} alt='footer' />
-                    <img src={footer_3} alt='footer' />
-                    <img src={footer_4} alt='footer' />
-                    <img src={footer_5} alt='footer' />
+                    <img id='image-1' src={footer_1} alt='footer' />
+                    <img id='image-2' src={footer_2} alt='footer' />
+                    <img id='image-3' src={footer_3} alt='footer' />
+                    <img id='image-4' src={footer_4} alt='footer' />
+                    <img id='image-5' src={footer_5} alt='footer' />
                 </div>
             )}
             <div className='flex __footer-container align-start justify-space-between'>

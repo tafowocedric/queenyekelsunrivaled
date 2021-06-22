@@ -56,6 +56,12 @@ const IconMenu = ({ color, size, ...props }) => (
     </Svg>
 );
 
+const IconChevronUp = ({ color, size, ...props }) => (
+    <Svg size={size} viewBox='0 0 512 512' color={color} x='0px' y='0px' {...props}>
+        <path fill='none' stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='48' d='M112 328l144-144 144 144' />
+    </Svg>
+);
+
 const IconAbout1 = ({ color, size, ...props }) => (
     <Svg size={size} viewBox='0 0 70 70' color={color} {...props}>
         <g id='about-icon1' transform='translate(-387 -1205)'>
@@ -161,6 +167,9 @@ const Icons = ({ name, size, color, ...props }) => {
 
         case 'IconAbout3':
             return <IconAbout3 {...inputProps} />;
+
+        case 'IconChevronUp':
+            return <IconChevronUp {...inputProps} />;
 
         default:
             break;

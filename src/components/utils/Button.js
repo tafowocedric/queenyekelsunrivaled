@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../../css/utils/button.sass';
 
-export const ButtonLink = ({ children, className, link, ...rest }) => {
+const ButtonLink = ({ children, className, link, ...rest }) => {
     return (
         <div className={className}>
             <Link to={link} {...rest}>
@@ -13,14 +13,21 @@ export const ButtonLink = ({ children, className, link, ...rest }) => {
     );
 };
 
-const Button = ({ children, type, className, ...rest }) => {
+const Buttons = ({ children, className, type, ...rest }) => {
+    return (
+        <button type={type} title={rest?.title} className={`btn ${className}`} {...rest}>
+            {children}
+        </button>
+    );
+};
+
+const Button = ({ children, type, ...rest }) => {
     switch (type) {
         case 'link':
-            return (
-                <ButtonLink className={className} {...rest}>
-                    {children}
-                </ButtonLink>
-            );
+            return <ButtonLink {...rest}>{children}</ButtonLink>;
+
+        case 'submit':
+            return <Buttons {...rest}>{children}</Buttons>;
 
         default:
             break;

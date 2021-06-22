@@ -89,12 +89,12 @@ html body #root
         grid-template-columns: repeat(12, 1fr)
         grid-gap: 20px
 
-        @include breakpoint($breakpoint-mobile-small-device, false)
+        @include breakpoint($breakpoint-tablet-mobile-small, false)
             @for $index from 1 through 12
                 .col-xs-#{$index}
                     grid-column: span #{$index}
 
-        @include breakpoint($breakpoint-mobile-small-device, true)
+        @include breakpoint($breakpoint-tablet-mobile-small, true)
             @for $index from 1 through 12
                 .col-sm-#{$index}
                     grid-column: span #{$index}

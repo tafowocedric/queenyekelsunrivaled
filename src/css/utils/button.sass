@@ -47,3 +47,20 @@
                 background-color: $light-red
                 span
                     color: $white
+
+button.btn
+    border: none
+    padding: 15px 40px
+    background-color: $red
+    border-radius: 5px
+    cursor: pointer
+
+    span
+        text-transform: capitalize
+        font-family: $concert-one
+        font-size: pxToRem(18px)
+        display: inline-block
+        color: $white
+
+    &:hover
+        background-color: darken($red, 10%)

@@ -2,12 +2,12 @@ import React from 'react';
 import PublicFooter from '../common/PublicFooter';
 import PublicHeader from '../common/PublicHeader';
 
-const PublicContainer = ({ children, footer, footer_image }) => {
+const PublicContainer = ({ children, footer, images }) => {
     return (
         <div className='queen-yekel-unrivaled'>
             <PublicHeader />
             {children}
-            {footer && <PublicFooter use_image={footer_image} />}
+            {footer && <PublicFooter images={images} />}
         </div>
     );
 };

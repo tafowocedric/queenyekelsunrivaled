@@ -16,9 +16,15 @@ import team_1 from '../../assets/home/team_1.webp';
 import team_2 from '../../assets/home/team_2.webp';
 import team_3 from '../../assets/home/team_3.webp';
 
+import footer_1 from '../../assets/footer_1.webp';
+import footer_2 from '../../assets/footer_2.webp';
+import footer_3 from '../../assets/footer_3.webp';
+import footer_4 from '../../assets/footer_4.webp';
+import footer_5 from '../../assets/footer_5.webp';
+
 const Home = () => {
     return (
-        <PublicContainer footer footer_image>
+        <PublicContainer footer images={[footer_1, footer_2, footer_3, footer_4, footer_5]}>
             <div className='main'>
                 <section className='flex align-center slider-area'>
                     <div className='grid container'>

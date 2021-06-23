@@ -3,9 +3,17 @@ import PublicContainer from '../container/PublicContainer';
 
 import '../../css/pages/About.css';
 
+import boss_img from '../../assets/about/bossyekel.png';
+
+import about_footer1 from '../../assets/about/about_footer1.jpg'
+import about_footer2 from '../../assets/about/about_footer2.jpg'
+import about_footer3 from '../../assets/about/about_footer3.jpg'
+import about_footer4 from '../../assets/about/about_footer4.jpg'
+import about_footer5 from '../../assets/about/about_footer5.jpg'
+
 const About = () => {
     return (
-        <PublicContainer>
+        <PublicContainer footer images = {[about_footer1, about_footer2, about_footer3, about_footer4, about_footer5]}>
             <div className="about">
 
                 {/* ABOUT PAGE BANNER */}
@@ -60,7 +68,7 @@ const About = () => {
                             </div>
 
                             <div className="who-we-are-image-wrap">
-                                <img src="" alt="Founder of Queen Yekel's Unrivaled" />
+                                <img src={boss_img} alt='img' />
                             </div>
                         </div>
                     </div>

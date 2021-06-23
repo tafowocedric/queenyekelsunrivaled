@@ -2,24 +2,17 @@ import React from 'react';
 import colors from '../utils/colors';
 import Icons from '../utils/Icons';
 
-import footer_1 from '../../assets/footer_1.webp';
-import footer_2 from '../../assets/footer_2.webp';
-import footer_3 from '../../assets/footer_3.webp';
-import footer_4 from '../../assets/footer_4.webp';
-import footer_5 from '../../assets/footer_5.webp';
 import { Link } from 'react-router-dom';
 import { ROUTE_LINKS } from '../../utils/routing';
 
-const PublicFooter = ({ use_image }) => {
+const PublicFooter = ({ images }) => {
     return (
         <footer className='queen-footer mg-t-40'>
-            {use_image && (
+            {images && (
                 <div className='footer-image flex'>
-                    <img src={footer_1} alt='footer' />
-                    <img src={footer_2} alt='footer' />
-                    <img src={footer_3} alt='footer' />
-                    <img src={footer_4} alt='footer' />
-                    <img src={footer_5} alt='footer' />
+                    {images.map((image, i) => {
+                        return (<img key={i} src={image} alt={image} />)
+                    })}
                 </div>
             )}
             <div className='flex __footer-container align-start justify-space-between'>

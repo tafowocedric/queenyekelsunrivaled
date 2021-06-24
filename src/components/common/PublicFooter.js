@@ -11,7 +11,7 @@ const PublicFooter = ({ images }) => {
             {images && (
                 <div className='footer-image flex'>
                     {images.map((image, i) => {
-                        return (<img key={i} src={image} alt={image} />)
+                        return <img key={i} src={image} alt={image} />;
                     })}
                 </div>
             )}

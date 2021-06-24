@@ -1,6 +1,7 @@
 import React from 'react';
 import PublicFooter from '../common/PublicFooter';
 import PublicHeader from '../common/PublicHeader';
+import ScrollToTop from '../common/ScrollToTop';
 
 const PublicContainer = ({ children, footer, images }) => {
     return (
@@ -8,6 +9,7 @@ const PublicContainer = ({ children, footer, images }) => {
             <PublicHeader />
             {children}
             {footer && <PublicFooter images={images} />}
+            <ScrollToTop />
         </div>
     );
 };

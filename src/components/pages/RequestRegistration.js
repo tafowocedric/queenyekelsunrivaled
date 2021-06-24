@@ -53,7 +53,7 @@ const RequestRegistration = () => {
             <Spinner visible={showSpinner} className='full-width' size={56} />
             <PublicContainer footer footer_image>
                 <div className='toast-container'>{toastState && Object.keys(toastState).map((key, i) => <Fragment key={i}>{toastState[key] && <Toast message={toastState[key]} iconName={toastType.icon} className={`nth-${i}`} type={toastType.type} toast_key={key} state={toastState} setState={setToastState} />}</Fragment>)}</div>
-                <div className='enroll-now-page'>
+                <div className='enroll-now-page mg-b-40'>
                     <div className='page-banner-area'>
                         <div className='container'>
                             <div className='page-banner-content'>

@@ -12,7 +12,7 @@ import { ROUTE_LINKS } from '../../utils/routing';
 
 const PublicFooter = ({ use_image }) => {
     return (
-        <footer className='queen-footer mg-t-40'>
+        <footer className='queen-footer'>
             {use_image && (
                 <div className='footer-image flex'>
                     <img id='image-1' src={footer_1} alt='footer' />

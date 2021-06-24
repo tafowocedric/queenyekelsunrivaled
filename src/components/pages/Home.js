@@ -19,7 +19,7 @@ import team_3 from '../../assets/home/team_3.webp';
 const Home = () => {
     return (
         <PublicContainer footer footer_image>
-            <div className='main'>
+            <div className='main mg-b-40'>
                 <section className='flex align-center slider-area'>
                     <div className='grid container'>
                         <div className='col-lg-6 col-md-6 col-sm-11 col-xs-12 pd-l-15 pd-r-15'>
@@ -164,7 +164,7 @@ const Home = () => {
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
-                                    <div className='social-media flex justify-space-between'>
+                                    <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
                                         </Link>
@@ -185,7 +185,7 @@ const Home = () => {
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
-                                    <div className='social-media flex justify-space-between'>
+                                    <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
                                         </Link>
@@ -206,7 +206,7 @@ const Home = () => {
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
-                                    <div className='social-media flex justify-space-between'>
+                                    <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
                                         </Link>
@@ -227,7 +227,7 @@ const Home = () => {
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
-                                    <div className='social-media flex justify-space-between'>
+                                    <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
                                         </Link>

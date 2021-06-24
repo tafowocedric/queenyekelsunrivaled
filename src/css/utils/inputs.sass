@@ -10,6 +10,9 @@
         height: 47px
         background-color: $white
 
+        &.error
+            border-color: $notify-error
+
         label
             font-size: pxToRem(11px)
             align-self: center
@@ -45,7 +48,10 @@
                 &::-webkit-inner-spin-button
                     display: none
                 &::-webkit-calendar-picker-indicator
-                    background: transparent
+                    background-color: $light-gray
+                    padding: 5px
+                    &:hover
+                        cursor: pointer
 
         &.extend-height
             height: fit-content

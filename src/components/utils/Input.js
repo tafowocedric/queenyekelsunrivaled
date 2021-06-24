@@ -4,25 +4,25 @@ const InputText = ({ name, label, className, ...rest }) => {
     return (
         <div className={`flex input ${className}`}>
             {label && <label htmlFor={name}>{label}:</label>}
-            <input type='text' id={name} {...rest} />
+            <input type='text' id={name} name={name} {...rest} />
         </div>
     );
 };
 
-const InputNumber = ({ name, label, ...rest }) => {
+const InputNumber = ({ name, label, className, ...rest }) => {
     return (
-        <div className='flex input'>
+        <div className={`flex input ${className}`}>
             {label && <label htmlFor={name}>{label}:</label>}
-            <input type='number' id={name} {...rest} />
+            <input type='number' id={name} name={name} {...rest} />
         </div>
     );
 };
 
-const InputDate = ({ name, label, ...rest }) => {
+const InputDate = ({ name, label, className, ...rest }) => {
     return (
-        <div className='flex input'>
+        <div className={`flex input ${className}`}>
             {label && <label htmlFor={name}>{label}:</label>}
-            <input type='date' id={name} {...rest} />
+            <input type='date' id={name} name={name} {...rest} />
         </div>
     );
 };
@@ -35,7 +35,7 @@ const InputRadio = ({ name, label, options, className, ...rest }) => {
                 {options.map((option, i) => {
                     return (
                         <label className='flex align-center radio' key={i}>
-                            <input type='radio' name={name} {...rest} />
+                            <input type='radio' name={name} value={option} {...rest} />
                             <span className='flex align-center justify-center'>{option}</span>
                         </label>
                     );

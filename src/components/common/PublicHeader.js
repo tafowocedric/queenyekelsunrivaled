@@ -5,7 +5,7 @@ import colors from '../utils/colors';
 import Icons from '../utils/Icons';
 import Button from '../utils/Button';
 
-import logo from '../../assets/logo512.png';
+import logo from '../../assets/logo.png';
 
 const PublicHeader = () => {
     const [toggleMobileNavBar, setToggleMobileNavBar] = useState(false);
@@ -44,7 +44,9 @@ const PublicHeader = () => {
                     </div>
                 </div>
                 <div className='flex __header-container align-center justify-space-between'>
-                    <img src={logo} alt='' className='logo' />
+                    <Link to={ROUTE_LINKS.HOME}>
+                        <img src={logo} alt='' className='logo' />
+                    </Link>
                     <nav className='nav-bar web-view'>
                         <ul className='flex align-center justify-center'>
                             <Button type='link' link={ROUTE_LINKS.HOME} className='btn btn-link mg-r-20'>

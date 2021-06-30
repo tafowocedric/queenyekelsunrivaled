@@ -23,7 +23,6 @@ const RequestRegistration = () => {
         const { data } = response;
 
         if (!response.ok) return setErrors(data.data);
-
         return setToastState(data.data);
     };
 
@@ -44,7 +43,7 @@ const RequestRegistration = () => {
         setShowSpinner(false);
         setIsSubmitting(false);
 
-        setToastType({ type: 'success', icon: 'IconSuccess' });
+        if (Object.keys(errors).length < 1) setToastType({ type: 'success', icon: 'IconSuccess' });
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [toastState]);
 

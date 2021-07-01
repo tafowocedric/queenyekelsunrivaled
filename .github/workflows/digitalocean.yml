@@ -35,14 +35,16 @@ jobs:
       - name: Deploy React App
         uses: appleboy/ssh-action@v0.1.2
         with:
-          echo: echo ${{secrets.SSH_HOST}} ${{secrets.SSH_KEY}}
           host: ${{secrets.SSH_HOST}} # Ip address of the server
           key: ${{secrets.SSH_KEY}} # private or public key of the server
           username: ${{secrets.SSH_USERNAME}} # user of the server
           
           script: |
-            mkdir queenyekelsunrivaled.com # create folder to deploy app
-            cd queenyekelsunrivaled.com # cd to folder
-            git clone git@github.com:QueenYekelUnrivaled/queenyekelsunrivaled.git # clone this repo
-            echo 'Deployment successful to server' # message to display when deploy is successful
+            echo: echo ${{secrets.SSH_HOST}} ${{secrets.SSH_KEY}}
+          
+#           script: |
+#             mkdir queenyekelsunrivaled.com # create folder to deploy app
+#             cd queenyekelsunrivaled.com # cd to folder
+#             git clone git@github.com:QueenYekelUnrivaled/queenyekelsunrivaled.git # clone this repo
+#             echo 'Deployment successful to server' # message to display when deploy is successful
     

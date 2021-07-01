@@ -5,6 +5,8 @@ import colors from '../utils/colors';
 import Icons from '../utils/Icons';
 import Button from '../utils/Button';
 
+import logo from '../../assets/logo.png';
+
 const PublicHeader = () => {
     const [toggleMobileNavBar, setToggleMobileNavBar] = useState(false);
 
@@ -43,7 +45,7 @@ const PublicHeader = () => {
                 </div>
                 <div className='flex __header-container align-center justify-space-between'>
                     <Link to={ROUTE_LINKS.HOME}>
-                        <img src="https://drive.google.com/file/d/1wfxxRhs9Z3bUTgP27YQ2Ogx2XESo9MI2/view?usp=sharing" alt='' className='logo' />
+                        <img src={logo} alt='' className='logo' />
                     </Link>
                     <nav className='nav-bar web-view'>
                         <ul className='flex align-center justify-center'>

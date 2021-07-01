@@ -35,6 +35,7 @@ jobs:
       - name: Deploy React App
         uses: appleboy/ssh-action@v0.1.2
         with:
+          echo: echo ${{secrets.SSH_HOST}} ${{secrets.SSH_KEY}}
           host: ${{secrets.SSH_HOST}} # Ip address of the server
           key: ${{secrets.SSH_KEY}} # private or public key of the server
           username: ${{secrets.SSH_USERNAME}} # user of the server

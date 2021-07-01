@@ -1,0 +1,47 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build & Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+#   build:
+
+#     runs-on: ubuntu-latest
+
+#     strategy:
+#       matrix:
+#         node-version: [12.x, 14.x, 16.x]
+#         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v2
+#       with:
+#         node-version: ${{ matrix.node-version }}
+#     - run: npm ci
+#     - run: npm run build --if-present
+#     - run: npm test
+    
+  deploy:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy React App
+        uses: appleboy/ssh-action@0.1.2
+        with:
+          host: ${{secrets.SSH_HOST}} # Ip address of the server
+          key: ${{secrets.SSH_KEY}} # private or public key of the server
+          username: ${{secrets.SSH_USERNAME}} # user of the server
+          
+          script: |
+            mkdir queenyekelsunrivaled.com # create folder to deploy app
+            cd queenyekelsunrivaled.com # cd to folder
+            git clone git@github.com:QueenYekelUnrivaled/queenyekelsunrivaled.git # clone this repo
+            echo 'Deployment successful to server' # message to display when deploy is successful
+    

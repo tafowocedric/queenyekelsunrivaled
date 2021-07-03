@@ -1,0 +1,399 @@
+/* GLOBAL STYLE */
+
+*{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about .h1, .about .h2, .about .h3, .about .h4, .about .h5, .about .h6, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
+    font-family: catamaran,sans-serif;
+    font-weight: 700;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: catamaran,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about p {
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: roboto,sans-serif;
+    font-size: 16px;
+}
+
+.about span {
+    font-size: 20px;
+    color: #ea512e;
+    font-weight: 600;
+    font-family: sacramento,cursive;
+}
+
+.default-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #ea512e;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.about section {
+    padding: 100px 0;
+}
+
+/* SERVICE PAGE BANNER */
+
+.about .page-banner-area {
+    background-attachment: fixed;
+    background-image: url('../../assets/gallery/DSC_5100.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+}
+
+.about .page-banner-content h2 {
+    color: #fff !important;
+    font-size: 45px;
+}
+
+.about .page-banner-content {
+    text-align: center;
+}
+
+.about .page-banner-content ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.about .page-banner-content ul li {
+    padding: 0 15px;
+    font-weight: 600;
+    color: #ea512e;
+}
+
+.about .page-banner-content ul li:nth-child(2) {
+    border-left: 1px solid #ea512e;
+}
+
+
+/* SECTION ONE */
+.about-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.about .who-we-are-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about .who-we-are-content {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+.about .who-we-are-image-wrap {
+    margin-top: 30px;
+    flex-basis: 300px;
+    max-width: 500px;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.about .who-we-are-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.about .who-we-are-list li {
+  flex-basis: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.about .who-we-are-list li span p{
+    background-color: #ea512e;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0 7px 0 0;
+    padding-top: 2px;
+}
+
+.about .who-we-are-list li p {
+    margin-bottom: 0;
+    color: #1b0238;
+    font-weight: 600;
+}
+
+.about .who-we-are-btn.default-btn {
+    margin-top: 30px;
+}
+
+
+/* SECTION TWO */
+
+section.fun-facts-area {
+    background-image: url('../../assets/gallery/DSC_5098.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about .fun-fact-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .single-fun-fact {
+    color: #fff;
+    background-color: #5da7bd;
+    opacity: 0.9;
+    padding: 50px 50px;
+    margin: 15px;
+    flex: 1 0 200px;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.single-fun-fact.bg-1 {
+    background-color: #e9aa52;
+}
+
+.single-fun-fact.bg-2 {
+    background-color: #6a4d8d;
+}
+
+.single-fun-fact.bg-3 {
+    background-color: #de5e32;
+}
+
+.about .single-fun-fact h3 {
+    font-size: 60px;
+    font-weight: bolder;
+    columns: #fff !important;
+}
+
+.about .single-fun-fact p {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+/* SECTION THREE */
+
+section.teacher-area .about-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teacher-area .single-teacher-text-item {
+    flex: 1 0 25%;
+    justify-content: space-between;
+    margin: 60px 30px 60px 0;
+}
+
+.teacher-area .single-teacher-item {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    flex: 1 0 25%;
+    border-radius: 50px;
+    margin: 0 30px 30px 0;
+    color: #fff;
+}
+
+.teacher-area .single-teacher-item .image {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.teacher-area .single-teacher-item .image img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.teacher-area .single-teacher-item .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.teacher-area .single-teacher-item:hover .overlay {
+    opacity: 0.7;
+}
+
+.about .single-teacher-item .content {
+    text-align: center;
+}
+
+.about .single-teacher-item span {
+    color: #fff;
+}
+
+
+/* NEWSLETTER SECTION */
+
+.about .newsletter-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fdeee9;
+}
+
+.about .newsletter-area .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.about .newsletter-area .about-container div {
+    flex: 1 0 400px;
+    margin: 15px;
+}
+
+.about .newsletter-area .about-container h2 {
+    font-size: 35px;
+}
+
+.newsletter-form-content {
+    position: relative;
+}
+
+.newsletter-form-content .input-newsletter {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    height: 60px;
+    padding-left: 25px;
+    border-radius: 30px;
+    outline: 0;
+    color: #1b0238;
+}
+
+.newsletter-form-content .newsletter-form button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background-color: #ea512e;
+    color: #fff;
+    border: none;
+    height: 52px;
+    padding: 0 30px;
+    border-radius: 30px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    line-height: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 424px) {
+    .about section .about-container {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 425px) {
+    .about section .about-container {
+        max-width: 90%;
+    }
+}
+ 
+@media (min-width: 1000px) {
+    .about section .about-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body .about {
+        font-size: 85%;
+    }
+
+    .about .who-we-are-container {
+        display: block;
+    }
+
+    .teacher-area .single-teacher-text-item {
+        flex: 1 0 40%;
+    }
+
+    .teacher-area .single-teacher-item {
+        flex: 1 0 40%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .teacher-area .single-teacher-text-item {
+            flex-basis: 100%;
+        }
+
+    .teacher-area .single-teacher-item {
+        flex: 1 0 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about .who-we-are-content {
+        flex-grow: 6;
+    }
+}
+
+@media (min-width: 1024px) {
+    .teacher-area .single-teacher-item {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .about section .about-container {
+        max-width: 1440px;
+    }
+}
+

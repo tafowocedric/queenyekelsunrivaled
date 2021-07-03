@@ -57,7 +57,7 @@ body {
 
 .about .page-banner-area {
     background-attachment: fixed;
-    background-image: url('../../assets/about/fifa.png');
+    background-image: url('../../assets/gallery/DSC_5100.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body {
 }
 
 .about .page-banner-content h2 {
-    color: #fff;
+    color: #fff !important;
     font-size: 45px;
 }
 
@@ -94,7 +94,7 @@ body {
 
 
 /* SECTION ONE */
-.container {
+.about-container {
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -104,9 +104,15 @@ body {
     justify-content: center;
 }
 
-.about .who-we-are-content,
-.about .who-we-are-image-wrap {
+.about .who-we-are-content {
     flex-basis: 300px;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+.about .who-we-are-image-wrap {
+    margin-top: 30px;
+    flex-basis: 300px;
+    max-width: 500px;
     flex-grow: 1;
     padding: 0 10px;
 }
@@ -153,7 +159,7 @@ body {
 /* SECTION TWO */
 
 section.fun-facts-area {
-    background-image: url('../../assets/about/fifa.png');
+    background-image: url('../../assets/gallery/DSC_5098.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -161,15 +167,16 @@ section.fun-facts-area {
 .about .fun-fact-elements {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about .single-fun-fact {
     color: #fff;
     background-color: #5da7bd;
     opacity: 0.9;
-    padding: 70px 60px;
-    margin: 0 10px;
-    flex: 1 0 50px;
+    padding: 50px 50px;
+    margin: 15px;
+    flex: 1 0 200px;
     border-radius: 15px;
     text-align: center;
 
@@ -190,6 +197,7 @@ section.fun-facts-area {
 .about .single-fun-fact h3 {
     font-size: 60px;
     font-weight: bolder;
+    columns: #fff !important;
 }
 
 .about .single-fun-fact p {
@@ -201,25 +209,35 @@ section.fun-facts-area {
 
 /* SECTION THREE */
 
-section.teacher-area .container {
+section.teacher-area .about-container {
     display: flex;
     flex-wrap: wrap;
 }
 
 .teacher-area .single-teacher-text-item {
-    flex: 1 0 30%;
+    flex: 1 0 25%;
     justify-content: space-between;
     margin: 60px 30px 60px 0;
 }
 
 .teacher-area .single-teacher-item {
     position: relative;
-    min-height: 410px;
-    flex: 1 0 30%;
+    height: 360px;
+    overflow: hidden;
+    flex: 1 0 25%;
     border-radius: 50px;
     margin: 0 30px 30px 0;
-    border: 1px solid grey;
     color: #fff;
+}
+
+.teacher-area .single-teacher-item .image {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.teacher-area .single-teacher-item .image img {
+    height: 500px;
+    object-fit: cover;
 }
 
 .teacher-area .single-teacher-item .overlay {
@@ -235,13 +253,13 @@ section.teacher-area .container {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .4s ease;
     background-color: black;
     border-radius: 50px;
 }
 
 .teacher-area .single-teacher-item:hover .overlay {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .about .single-teacher-item .content {
@@ -261,16 +279,20 @@ section.teacher-area .container {
     background-color: #fdeee9;
 }
 
-.about .newsletter-area .container {
+.about .newsletter-area .about-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    padding: 0 15px;
 }
 
-.about .newsletter-area .container div {
-    flex: 1 0 49%;
+.about .newsletter-area .about-container div {
+    flex: 1 0 400px;
+    margin: 15px;
 }
 
-.about .newsletter-area .container h2 {
+.about .newsletter-area .about-container h2 {
     font-size: 35px;
 }
 
@@ -308,3 +330,70 @@ section.teacher-area .container {
     font-size: 16px;
     font-weight: 500;
 }
+
+@media (max-width: 424px) {
+    .about section .about-container {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 425px) {
+    .about section .about-container {
+        max-width: 90%;
+    }
+}
+ 
+@media (min-width: 1000px) {
+    .about section .about-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body .about {
+        font-size: 85%;
+    }
+
+    .about .who-we-are-container {
+        display: block;
+    }
+
+    .teacher-area .single-teacher-text-item {
+        flex: 1 0 40%;
+    }
+
+    .teacher-area .single-teacher-item {
+        flex: 1 0 40%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .teacher-area .single-teacher-text-item {
+            flex-basis: 100%;
+        }
+
+    .teacher-area .single-teacher-item {
+        flex: 1 0 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about .who-we-are-content {
+        flex-grow: 6;
+    }
+}
+
+@media (min-width: 1024px) {
+    .teacher-area .single-teacher-item {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .about section .about-container {
+        max-width: 1440px;
+    }
+}
+

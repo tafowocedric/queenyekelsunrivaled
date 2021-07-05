@@ -7,6 +7,13 @@ const About = () => {
     return (
         <PublicContainer>
             <div>About Us</div>
+            <div>About Us</div>
+            <div>About Us</div>
+            <div>About Us</div>
+            <div>About Us</div>
+            <div>About Us</div>
+            <div>About Us</div>
+            <div>About Us</div>
         </PublicContainer>
     );
 };

@@ -1,6 +1,6 @@
 /* GLOBAL STYLE */
 
-*{
+* {
     list-style-type: none;
     box-sizing: border-box;
 }
@@ -10,15 +10,26 @@ a {
     text-decoration: none;
 }
 
-.about .h1, .about .h2, .about .h3, .about .h4, .about .h5, .about .h6, .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
-    font-family: catamaran,sans-serif;
+.about .h1,
+.about .h2,
+.about .h3,
+.about .h4,
+.about .h5,
+.about .h6,
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about h5,
+.about h6 {
+    font-family: catamaran, sans-serif;
     font-weight: 700;
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: catamaran,sans-serif;
+    font-family: catamaran, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -27,7 +38,7 @@ body {
     line-height: 1.8;
     color: #6b6b84;
     font-weight: 400;
-    font-family: roboto,sans-serif;
+    font-family: roboto, sans-serif;
     font-size: 16px;
 }
 
@@ -35,7 +46,7 @@ body {
     font-size: 20px;
     color: #ea512e;
     font-weight: 600;
-    font-family: sacramento,cursive;
+    font-family: sacramento, cursive;
 }
 
 .default-btn {
@@ -46,7 +57,7 @@ body {
     border-radius: 30px;
     font-size: 16px;
     font-weight: 500;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .about section {
@@ -79,7 +90,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    
 }
 
 .about .page-banner-content ul li {
@@ -91,7 +101,6 @@ body {
 .about .page-banner-content ul li:nth-child(2) {
     border-left: 1px solid #ea512e;
 }
-
 
 /* SECTION ONE */
 .about-container {
@@ -125,17 +134,17 @@ body {
 }
 
 .about .who-we-are-list li {
-  flex-basis: 50%;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 20px;
-  height: 100%;
-  text-align: center;
-  align-items: center;
-  display: flex;
+    flex-basis: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
-.about .who-we-are-list li span p{
+.about .who-we-are-list li span p {
     background-color: #ea512e;
     color: #fff;
     width: 30px;
@@ -154,7 +163,6 @@ body {
 .about .who-we-are-btn.default-btn {
     margin-top: 30px;
 }
-
 
 /* SECTION TWO */
 
@@ -179,7 +187,6 @@ section.fun-facts-area {
     flex: 1 0 200px;
     border-radius: 15px;
     text-align: center;
-
 }
 
 .single-fun-fact.bg-1 {
@@ -205,7 +212,6 @@ section.fun-facts-area {
     font-weight: bolder;
     color: #fff !important;
 }
-
 
 /* SECTION THREE */
 
@@ -253,7 +259,7 @@ section.teacher-area .about-container {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .4s ease;
+    transition: 0.4s ease;
     background-color: black;
     border-radius: 50px;
 }
@@ -269,7 +275,6 @@ section.teacher-area .about-container {
 .about .single-teacher-item span {
     color: #fff;
 }
-
 
 /* NEWSLETTER SECTION */
 
@@ -322,8 +327,8 @@ section.teacher-area .about-container {
     height: 52px;
     padding: 0 30px;
     border-radius: 30px;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     line-height: 50px;
     text-transform: capitalize;
     cursor: pointer;
@@ -342,7 +347,7 @@ section.teacher-area .about-container {
         max-width: 90%;
     }
 }
- 
+
 @media (min-width: 1000px) {
     .about section .about-container {
         max-width: 95%;
@@ -350,7 +355,6 @@ section.teacher-area .about-container {
 }
 
 @media (max-width: 768px) {
-
     body .about {
         font-size: 85%;
     }
@@ -366,13 +370,12 @@ section.teacher-area .about-container {
     .teacher-area .single-teacher-item {
         flex: 1 0 40%;
     }
-
 }
 
 @media (max-width: 600px) {
     .teacher-area .single-teacher-text-item {
-            flex-basis: 100%;
-        }
+        flex-basis: 100%;
+    }
 
     .teacher-area .single-teacher-item {
         flex: 1 0 100%;
@@ -405,17 +408,26 @@ section.teacher-area .about-container {
 
     .about .newsletter-area .about-container div {
         flex: 0;
-        width: 450px;
+        width: auto;
     }
 
     .about .newsletter-area .about-container h2 {
         font-size: initial;
         max-width: 300px;
     }
+
+    .about .about-container .newsletter-form {
+        flex-wrap: wrap;
+    }
+
+    .about .about-container .newsletter-form button {
+        position: relative;
+        display: block;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 425px) {
-
     .about .newsletter-area {
         overflow: hidden;
     }
@@ -439,7 +451,7 @@ section.teacher-area .about-container {
     }
 }
 
-    @media (max-width: 320px) {
+@media (max-width: 320px) {
     .newsletter-form-content .input-newsletter {
         width: 270px;
     }

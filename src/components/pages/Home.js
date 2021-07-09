@@ -41,9 +41,9 @@ const Home = () => {
                         <div className='__title-about col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-b-20'>
                             <div className='section-title'>
                                 <h2 className='mg-b-10'>
-                                    welcome to our <span style={{ color: colors.light_red }}>kindergarten</span>
+                                    welcome to <span style={{ color: colors.light_red }}>Queen Yekel's Unrivaled</span>
                                 </h2>
-                                <p className='mg-b-10'>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue fowl male signs.</p>
+                                <p className='mg-b-10'>A kindergarten and Nursery school, open to children between the ages of 06 months and 03 years. The complex was birthed out of the need to provide a school for children who are as young as 6 months old in a context where they are almost inexistent. </p>
                             </div>
                         </div>
                         <div className='__about-features __features-container grid col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-center'>
@@ -53,8 +53,9 @@ const Home = () => {
                                         <Icons name='IconAbout1' color={colors.color_font_1} size={45} />
                                     </div>
                                     <div className='features-caption'>
-                                        <h3 style={{ color: colors.color_font_1 }}>Inter School Sports</h3>
-                                        <p>The words you use in your written communica speak volumes.</p>
+                                        <h3 style={{ color: colors.color_font_1 }}>Foundation of God</h3>
+                                        <p>A space where respect, moral rectitude and responsible behavior is inculcated from very tender ages.
+</p>
                                     </div>
                                 </div>
                                 <div className='flex about-caption align-center'>
@@ -63,7 +64,7 @@ const Home = () => {
                                     </div>
                                     <div className='features-caption'>
                                         <h3 style={{ color: colors.color_font_2 }}>Friendly Environment</h3>
-                                        <p>The words you use in your written communica speak volumes.</p>
+                                        <p>State of the art equipment and services which offers a clean and healthy campus.</p>
                                     </div>
                                 </div>
                                 <div className='flex about-caption align-center'>
@@ -71,8 +72,8 @@ const Home = () => {
                                         <Icons name='IconAbout3' color={colors.color_font_3} size={45} />
                                     </div>
                                     <div className='features-caption'>
-                                        <h3 style={{ color: colors.color_font_3 }}>Multimedia Class</h3>
-                                        <p>The words you use in your written communica speak volumes.</p>
+                                        <h3 style={{ color: colors.color_font_3 }}>Academics</h3>
+                                        <p>Queen Yekel’s Unrivaled packs a stellar lineup of academic programs.</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,38 +99,43 @@ const Home = () => {
                                     <img src={class_1} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
                                         <Link to={ROUTE_LINKS.NEWS}>
-                                            <h3>Intelligent Challenge</h3>
+                                            <h3>Intelligence</h3>
                                         </Link>
-                                        <p>The words you use in your written communica speak volumes. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, molestiae!</p>
-                                        <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
+                                        <p>Our academic programs aim to build communication skills, social and emotional skills, early reading and writing skills and motor skills in pupils. </p>
+                                        {/* <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
                                             View More
-                                        </Button>
+                                        </Button> */}
                                     </div>
                                 </div>
                                 <div className='card pd-b-10'>
                                     <img src={class_2} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
                                         <Link to={ROUTE_LINKS.NEWS}>
-                                            <h3>Intelligent Challenge</h3>
+                                            <h3>Communication</h3>
                                         </Link>
-                                        <p>The words you use in your written communica speak volumes.</p>
-                                        <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
+                                        <p>Languages (English, French and Chinese) and information technology (IT) skills will be developed in the children.</p>
+                                        {/* <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
                                             View More
-                                        </Button>
+                                        </Button> */}
                                     </div>
                                 </div>
                                 <div className='card pd-b-10'>
                                     <img src={class_3} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
                                         <Link to={ROUTE_LINKS.NEWS}>
-                                            <h3>Intelligent Challenge</h3>
+                                            <h3>A Solid Foundation</h3>
                                         </Link>
-                                        <p>The words you use in your written communica speak volumes.</p>
-                                        <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
+                                        <p>With a program like this, the children will have a solid foundation and will find little to no difficulties when they grow into different stages in life.</p>
+                                        {/* <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
                                             View More
-                                        </Button>
+                                        </Button> */}
                                     </div>
                                 </div>
+                            </div>
+                            <div>
+                            <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
+                                View More
+                            </Button>
                             </div>
                         </div>
                     </div>

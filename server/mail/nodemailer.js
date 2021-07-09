@@ -16,8 +16,9 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-const sendMail = async (from, to, subject, type, data) => {
-    let html = await readFile(`${__dirname}/${type}`, 'utf8');
+const sendMailTemplate = async (from, to, subject, type, data) => {
+    let html = type;
+    if (type.endsWith('.html')) html = await readFile(`${__dirname}/${type}`, 'utf8');
 
     if (data) {
         const template = handlebars.compile(html);
@@ -27,4 +28,4 @@ const sendMail = async (from, to, subject, type, data) => {
     return transporter.sendMail({ from, to, subject, html });
 };
 
-module.exports = { sendMail };
+module.exports = { sendMailTemplate };

@@ -1,5 +1,5 @@
 const { prisma } = require('../prisma_client');
-const { sendMail } = require('../mail/nodemailer');
+const { sendMailTemplate } = require('../mail/nodemailer');
 
 module.exports = {
     addSubscriber: async (req, res) => {
@@ -12,7 +12,7 @@ module.exports = {
         try {
             await prisma.subscriber.create({ data: { email: email } });
 
-            sendMail('"Queen Yekel Unrivaled" <queenyekel\'sunrivaled@gmail.com>', email, 'Successful Subscription', 'subscription.html');
+            sendMailTemplate('"Queen Yekel Unrivaled" <queenyekel\'sunrivaled@gmail.com>', email, 'Successful Subscription', 'subscription.html');
             return res.status(201).json({ data: { message: 'successfully subscribe' } });
         } catch (error) {
             return res.status(500).json({ data: { error: 'Error processing your request please try again' } });
@@ -63,6 +63,14 @@ module.exports = {
     getAllRequests: async (req, res) => {
         const requests = await prisma.registration.findMany();
         return res.status(200).json(requests ? requests : []);
+    },
+
+    forwardMail: async (req, res) => {
+        const { name, email, phone, subject, message } = req.body;
+        const html = `<p>${message}</p><br/><p><i>name: </i>${name}</p><p><i>phone: </i>${phone}</p><p><i>email: </i>${email}</p>`;
+
+        sendMailTemplate('"Queen Yekel Unrivaled" <queenyekel\'sunrivaled@gmail.com>', email, subject, html);
+        return res.status(200).json({ data: { message: 'Mail successfully sent' } });
     },
 };
 

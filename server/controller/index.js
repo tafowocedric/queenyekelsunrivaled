@@ -12,7 +12,8 @@ module.exports = {
         try {
             await prisma.subscriber.create({ data: { email: email } });
 
-            sendMailTemplate('"Queen Yekel Unrivaled" <queenyekel\'sunrivaled@gmail.com>', email, 'Successful Subscription', 'subscription.html');
+            const url = process.env.NODE_ENV === 'production' ? 'http://queenyekelsunrivaled.com/' : 'http://localhost:5001';
+            sendMailTemplate('"Queen Yekel Unrivaled" <queenyekel\'sunrivaled@gmail.com>', email, 'Successful Subscription', 'subscription.html', { url });
             return res.status(201).json({ data: { message: 'successfully subscribe' } });
         } catch (error) {
             return res.status(500).json({ data: { error: 'Error processing your request please try again' } });
@@ -44,6 +45,7 @@ module.exports = {
             const register = await prisma.registration.create({ data: data });
 
             if (!register) return res.status(422).json({ data: { errors: 'Error occured while sending request' } });
+
             return res.status(200).json({ data: { message: 'request successfully sent' } });
         } catch (error) {
             return res.status(500).json({ data: { error: 'Error processing your request please try again' } });

@@ -78,35 +78,35 @@ const ContactUs = () => {
                                             <div className='row'>
                                                 <div className='form-item'>
                                                     <div className='form-group'>
-                                                        <input type='text' name='name' onChange={handleChange} value={values.name || ''} id='name' class='form-control' required='' data-error='Please enter your name' placeholder='Your name' />
+                                                        <input type='text' name='name' onChange={handleChange} value={values.name || ''} id='name' className='form-control' required='' data-error='Please enter your name' placeholder='Your name' />
                                                         <div className='help-block with-errors'></div>
                                                     </div>
                                                 </div>
 
                                                 <div className='form-item'>
                                                     <div className='form-group'>
-                                                        <input type='email' name='email' onChange={handleChange} value={values.email || ''} id='email' class='form-control' required='' data-error='Please enter your email' placeholder='Your email address' />
+                                                        <input type='email' name='email' onChange={handleChange} value={values.email || ''} id='email' className='form-control' required='' data-error='Please enter your email' placeholder='Your email address' />
                                                         <div className='help-block with-errors'></div>
                                                     </div>
                                                 </div>
 
                                                 <div className='form-item'>
                                                     <div className='form-group'>
-                                                        <input type='text' name='phone' onChange={handleChange} value={values.phone || ''} id='phone_number' class='form-control' required='' data-error='Please enter your phone number' placeholder='Your phone number' />
+                                                        <input type='text' name='phone' onChange={handleChange} value={values.phone || ''} id='phone_number' className='form-control' required='' data-error='Please enter your phone number' placeholder='Your phone number' />
                                                         <div className='help-block with-errors'></div>
                                                     </div>
                                                 </div>
 
                                                 <div className='form-item'>
                                                     <div className='form-group'>
-                                                        <input type='text' name='subject' onChange={handleChange} value={values.subject || ''} id='subjects' class='form-control' required='' data-error='Please enter your subjects' placeholder='Subjects' />
+                                                        <input type='text' name='subject' onChange={handleChange} value={values.subject || ''} id='subjects' className='form-control' required='' data-error='Please enter your subjects' placeholder='Subjects' />
                                                         <div className='help-block with-errors'></div>
                                                     </div>
                                                 </div>
 
                                                 <div className='form-item'>
                                                     <div className='form-group'>
-                                                        <textarea name='message' onChange={handleChange} value={values.message || ''} id='message' cols='30' rows='5' required='' data-error='Please enter your message' class='form-control' placeholder='Write your message...'></textarea>
+                                                        <textarea name='message' onChange={handleChange} value={values.message || ''} id='message' cols='30' rows='5' required='' data-error='Please enter your message' className='form-control' placeholder='Write your message...'></textarea>
                                                         <div className='help-block with-errors'></div>
                                                     </div>
                                                 </div>

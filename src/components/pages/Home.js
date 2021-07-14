@@ -19,7 +19,7 @@ import team_3 from '../../assets/home/team_3.webp';
 const Home = () => {
     return (
         <PublicContainer footer footer_image>
-            <div className='main mg-b-40'>
+            <div className='main'>
                 <section className='flex align-center slider-area'>
                     <div className='grid container'>
                         <div className='col-lg-6 col-md-6 col-sm-11 col-xs-12 pd-l-15 pd-r-15'>
@@ -54,8 +54,7 @@ const Home = () => {
                                     </div>
                                     <div className='features-caption'>
                                         <h3 style={{ color: colors.color_font_1 }}>Foundation of God</h3>
-                                        <p>A space where respect, moral rectitude and responsible behavior is inculcated from very tender ages.
-</p>
+                                        <p>A space where respect, moral rectitude and responsible behavior is inculcated from very tender ages.</p>
                                     </div>
                                 </div>
                                 <div className='flex about-caption align-center'>
@@ -133,9 +132,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div>
-                            <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
-                                View More
-                            </Button>
+                                <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
+                                    View More
+                                </Button>
                             </div>
                         </div>
                     </div>
@@ -248,6 +247,27 @@ const Home = () => {
                                         </Link>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='class-offer-area speech-wrapper wrapper pd-t-50'>
+                    <div className='grid container mg-t-70'>
+                        <div className='__title-about col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-b-10'>
+                            <div className='section-title'>
+                                <div className='quote mg-b-10'>
+                                    <img src='https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/xtestimonial.png.pagespeed.ic.U5crWWNOc7.webp' alt='quote' />
+                                </div>
+                                <p className='mg-t-20 mg-b-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, repellendus distinctio, nulla, ullam expedita eos rerum dolores libero nostrum voluptas dolorem recusandae excepturi fuga ducimus! Dolore at voluptas sint neque?</p>
+                            </div>
+                        </div>
+                        <div className='flex align-center justify-center quote-details col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                            <div className='photo'>
+                                <img src={class_1} alt='img' />
+                            </div>
+                            <div className='desc'>
+                                <p>Jason Miller</p>
+                                <p>Teacher</p>
                             </div>
                         </div>
                     </div>

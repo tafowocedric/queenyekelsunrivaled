@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ROUTE_LINKS } from '../../utils/routing';
 import colors from '../utils/colors';
@@ -9,14 +9,30 @@ import logo from '../../assets/logo.png';
 
 const PublicHeader = () => {
     const [toggleMobileNavBar, setToggleMobileNavBar] = useState(false);
+    const [isVisible, setIsVisible] = useState('');
 
     const hangleToggle = () => {
         setToggleMobileNavBar(!toggleMobileNavBar);
     };
 
+    useEffect(() => {
+        // Button is displayed after scrolling for 250 pixels
+        const toggleVisibility = () => {
+            if (window.pageYOffset > 250) {
+                setIsVisible('float-display');
+            } else {
+                setIsVisible('');
+            }
+        };
+
+        window.addEventListener('scroll', toggleVisibility);
+
+        return () => window.removeEventListener('scroll', toggleVisibility);
+    }, []);
+
     return (
         <Fragment>
-            <header className='queen-header'>
+            <header className={`queen-header ${isVisible}`}>
                 <div className='flex __sub-header-container align-center justify-space-between'>
                     <div className='flex info align-center justify-space-between'>
                         <div className='flex icon-container align-center mg-r-40'>

@@ -4,6 +4,14 @@ header.queen-header
     width: 100%
     height: fit-content
 
+    &.float-display
+        position: fixed
+        top: 0
+        opacity: 0
+        z-index: 1
+        transform: translateY(-109px)
+        animation: slideDowm .57s ease-in-out forwards
+
     .__sub-header-container
         background-color: $red
         color: $white
@@ -142,3 +150,12 @@ header.queen-header
                         padding-top: 10px
                         z-index: 2
                         overflow: hidden
+
+@keyframes slideDowm
+    0%
+        height: 0
+
+    100%
+        opacity: 1
+        transform: translateY(0px)
+        box-shadow: $box-shadow

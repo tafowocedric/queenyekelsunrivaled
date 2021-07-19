@@ -7,7 +7,7 @@ import '../../css/pages/news.css'
 
 const News = () => {
     return (
-        <PublicContainer>
+        <PublicContainer footer>
             <div className="news">
                 <div className="news-banner">
                     <div className="news-banner-heading">
@@ -20,21 +20,87 @@ const News = () => {
                             <article className="news-item">
                                 <div className="news-item-img">
                                     <img src="" alt="" />
-                                    <a href="\" className="news-item-date">
+                                    <Link to={ROUTE_LINKS} className="news-item-date">
                                         <h3>15</h3>
                                         <p>Jan</p>
-                                    </a>
+                                    </Link>
                                 </div>
-                                <div className="news-item-details">
-                                    <a href="">
+                                <div className="news-item-details">                                    
+                                    <Link to={ROUTE_LINKS}>                                        
                                         <h2>Google inks pact for new 35-storey office</h2>
-                                    </a>
+                                    </Link>
                                     <p>
                                     That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying
                                     </p>
                                     <ul className="news-info-link">
                                         <li>
-                                            <a href="">Travel</a>
+                                            <Link to={ROUTE_LINKS}>Travel</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article className="news-item">
+                                <div className="news-item-img">
+                                    <img src="" alt="" />
+                                    <Link to={ROUTE_LINKS} className="news-item-date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
+                                    </Link>
+                                </div>
+                                <div className="news-item-details">                                    
+                                    <Link to={ROUTE_LINKS}>                                        
+                                        <h2>Google inks pact for new 35-storey office</h2>
+                                    </Link>
+                                    <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying
+                                    </p>
+                                    <ul className="news-info-link">
+                                        <li>
+                                            <Link to={ROUTE_LINKS}>Travel</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article className="news-item">
+                                <div className="news-item-img">
+                                    <img src="" alt="" />
+                                    <Link to={ROUTE_LINKS} className="news-item-date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
+                                    </Link>
+                                </div>
+                                <div className="news-item-details">                                    
+                                    <Link to={ROUTE_LINKS}>                                        
+                                        <h2>Google inks pact for new 35-storey office</h2>
+                                    </Link>
+                                    <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying
+                                    </p>
+                                    <ul className="news-info-link">
+                                        <li>
+                                            <Link to={ROUTE_LINKS}>Travel</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article className="news-item">
+                                <div className="news-item-img">
+                                    <img src="" alt="" />
+                                    <Link to={ROUTE_LINKS} className="news-item-date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
+                                    </Link>
+                                </div>
+                                <div className="news-item-details">                                    
+                                    <Link to={ROUTE_LINKS}>                                        
+                                        <h2>Google inks pact for new 35-storey office</h2>
+                                    </Link>
+                                    <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying
+                                    </p>
+                                    <ul className="news-info-link">
+                                        <li>
+                                            <Link to={ROUTE_LINKS}>Travel</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -46,9 +112,6 @@ const News = () => {
                                     <div className="form-group">
                                         <div className="input-group">
                                             <input type="text" class="form-control" placeholder="Search Key"/>
-                                            <div className="input-group-append">
-                                                <button>s</button>
-                                            </div>
                                         </div>
                                     </div>
                                     <button className="main-search-btn">Search</button>
@@ -64,7 +127,74 @@ const News = () => {
                                     <li><Link to={ROUTE_LINKS}>Inspiration</Link></li>
                                     <li><Link to={ROUTE_LINKS}>Healthcare</Link></li>
                                 </ul>
-                            </aside>  
+                            </aside> 
+
+                            <aside className="single-sidebar popular-post">
+                                <h4 className="widget-title">Recent Post</h4>
+                                <div className="post-item">
+                                    <div className="post-item-image">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="media-body">
+                                        <Link to={ROUTE_LINKS}><h3>From Life was you fish...</h3></Link>
+                                        <p>Jan 12, 2021</p>
+                                    </div>
+                                </div>
+                                <div className="post-item">
+                                    <div className="post-item-image">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="media-body">
+                                        <Link to={ROUTE_LINKS}><h3>From Life was you fish...</h3></Link>
+                                        <p>Jan 12, 2021</p>
+                                    </div>
+                                </div>
+                                <div className="post-item">
+                                    <div className="post-item-image">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="media-body">
+                                        <Link to={ROUTE_LINKS}><h3>From Life was you fish...</h3></Link>
+                                        <p>Jan 12, 2021</p>
+                                    </div>
+                                </div>
+                                <div className="post-item">
+                                    <div className="post-item-image">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="media-body">
+                                        <Link to={ROUTE_LINKS}><h3>From Life was you fish...</h3></Link>
+                                        <p>Jan 12, 2021</p>
+                                    </div>
+                                </div>
+
+                            </aside>
+
+                            <aside className="single-sidebar tag-widget">
+                                <h4 className="widget-title">Tag Clouds</h4>
+                                <ul className="list">
+                                    <li><Link to={ROUTE_LINKS}>Project</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>Love</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>Technology</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>Travel</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>Kitchen</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>Lifestyle</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>Design</Link></li>
+                                    <li><Link to={ROUTE_LINKS}>illustration</Link></li>
+                                </ul>
+                            </aside>
+
+                            <aside className="single-sidebar gallery-widget">
+                                <h4 className="widget-title">Gallery Feeds</h4>
+                                <ul className="gallery-row">
+                                    <li><Link to={ROUTE_LINKS}><img src="" alt="" /></Link></li>
+                                    <li><Link to={ROUTE_LINKS}><img src="" alt="" /></Link></li>
+                                    <li><Link to={ROUTE_LINKS}><img src="" alt="" /></Link></li>
+                                    <li><Link to={ROUTE_LINKS}><img src="" alt="" /></Link></li>
+                                    <li><Link to={ROUTE_LINKS}><img src="" alt="" /></Link></li>
+                                    <li><Link to={ROUTE_LINKS}><img src="" alt="" /></Link></li>
+                                </ul>
+                            </aside>
                         </div> 
                     </div>    
                 </div>

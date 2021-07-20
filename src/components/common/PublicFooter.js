@@ -33,21 +33,22 @@ const PublicFooter = ({ use_image }) => {
                         <Icons name='IconCall' size={22} color={colors.light_red} />
                         <div className='content'>
                             <p>Phone</p>
-                            <span>882-569-756</span>
+                            <span>695-944-232</span>
                         </div>
                     </div>
                     <div className='flex align-center __email'>
                         <Icons name='IconMail' size={22} color={colors.light_red} />
                         <div className='content'>
                             <p>Email</p>
-                            <span>example@example.com</span>
+                            <span>yekelunrivaled.com</span>
                         </div>
                     </div>
                     <div className='flex align-center __address'>
                         <Icons name='IconLocation' size={39} color={colors.light_red} />
                         <div className='content'>
                             <p>Address</p>
-                            <span>175 5th Ave Premium Area, New York, NY 10010, United States</span>
+                            <span>Bonamoussadi, Douala, Cameroon <br />200 Meters from
+Alimentation Fraicheur and Government English Primary School.</span>
                         </div>
                     </div>
                 </div>

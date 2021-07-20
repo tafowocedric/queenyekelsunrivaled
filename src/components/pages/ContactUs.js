@@ -126,28 +126,30 @@ const ContactUs = () => {
                                             <li>
                                                 <div>
                                                     <p>
-                                                        location: <span>Wonder Stree, Douala, Cameroon</span>
+                                                        location: <span>Bonamoussadi, Douala, Cameroon. <br />200 METERS FROM
+ALIMENTATION FRAICHEUR AND GOVERNMENT ENGLISH PRIMARY SCHOOL.</span>
+                                                        
                                                     </p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
                                                     <p>
-                                                        Call Us: <span>(+237) 123-456-789</span>
+                                                        Call Us: <span>(+237) 695-944-232</span>
                                                     </p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
                                                     <p>
-                                                        Email Us: <span>hello@queenyekel.com</span>
+                                                        Email Us: <span>yekelunrivaled@gmail.com</span>
                                                     </p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
                                                     <p>
-                                                        POBOX: <span>1510</span>
+                                                        POBOX: <span>--</span>
                                                     </p>
                                                 </div>
                                             </li>
@@ -167,8 +169,10 @@ const ContactUs = () => {
                                                 <p>
                                                     <span>Thursday: </span>8AM - 2PM
                                                 </p>
-                                                {/* <p><span>Friday: </span>8AM - 2PM</p>
-                                        <p><span>Saturday: </span>Closed</p> */}
+                                                <p><span>Friday: </span>8AM - 2PM</p>
+                                                <p>
+                                                     <span>Saturday: </span>8AM - 12PM
+                                                </p>
                                             </li>
                                         </div>
                                     </div>

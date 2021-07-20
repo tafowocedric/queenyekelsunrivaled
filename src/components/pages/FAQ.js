@@ -48,11 +48,12 @@ const FAQ = () => {
                                     <li className='accordion-item'>
                                         {/* <a href="" className="accordion-title"></a> */}
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='1'>
-                                            Explore Your Option
+                                            What Country are we in?
                                         </h5>
                                         {activeTab === '1' && (
                                             <p className='accordion-content' id='myDiv'>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Queen Yekel's Unrivaled is based in Douala, Cameroon. It is located 200 Meters from
+Alimentation Fraicheur and Government English Primary School
                                             </p>
                                         )}
                                     </li>
@@ -63,16 +64,16 @@ const FAQ = () => {
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='2'>
                                             Submit Application Online
                                         </h5>
-                                        {activeTab === '2' && <p className='accordion-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>}
+                                        {activeTab === '2' && <p className='accordion-content'>You can apply directly by filling and submiting the form on the enrol now tab</p>}
                                     </li>
                                 </ul>
                                 <ul className='accordion'>
                                     <li className='accordion-item'>
                                         {/* <a href="" className="accordion-title"></a> */}
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='3'>
-                                            Recieve Assign Task
+                                            Kids eligible for opportunity
                                         </h5>
-                                        {activeTab === '3' && <p className='accordion-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>}
+                                        {activeTab === '3' && <p className='accordion-content'>Our focus is, to a larger extent, on children within the age group of 6 months and 3 years</p>}
                                     </li>
                                 </ul>
                                 <ul className='accordion'>

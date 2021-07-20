@@ -93,8 +93,8 @@ const About = () => {
                                     <div className='who-we-are-content'>
                                         <span>About</span>
                                         <h3>Learn About Our Work and Cultural Activities</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <p>Queen Yekel’s Unrivaled is the fruit of a vision which was birthed from a need. As working parents, my husband and I sought for an institution where our six months old child could learn and develop important skills while we were away at work. Unfortunately, despite our endless search, we did not find such a school. Every school we visited rejected our child because she was too young. </p>
+                                        <p>From that instant, it dawned on me that there were other parents who had a similar problem. This therefore brought to live the vision to create a school where toddlers could be educated, nurtured and developed in the kind of place I will want for my child. QUEEN YEKEL’S UNRIVALED is a realization of that vision</p>
                                         <ul className='who-we-are-list'>
                                             <li>
                                                 <span>
@@ -138,20 +138,20 @@ const About = () => {
                             <div className='about-container'>
                                 <div className='fun-fact-elements'>
                                     <div className='single-fun-fact'>
-                                        <h3>400</h3>
+                                        <h3>100+</h3>
                                         <p>Students</p>
                                     </div>
                                     <div className='single-fun-fact bg-1'>
-                                        <h3>25</h3>
+                                        <h3>10+</h3>
                                         <p>Teachers</p>
                                     </div>
                                     <div className='single-fun-fact bg-2'>
-                                        <h3>400</h3>
-                                        <p>Classroom</p>
+                                        <h3>A+</h3>
+                                        <p>Classrooms</p>
                                     </div>
                                     <div className='single-fun-fact bg-3'>
-                                        <h3>A</h3>
-                                        <p>School Bus</p>
+                                        <h3>A+</h3>
+                                        <p>Kitchen</p>
                                     </div>
                                 </div>
                             </div>
@@ -161,9 +161,9 @@ const About = () => {
                         <section className='teacher-area'>
                             <div className='about-container'>
                                 <div className='single-teacher-text-item'>
-                                    <span>Expert Teacher</span>
-                                    <h3>Our Online Instructor</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <span>Expert Teachers</span>
+                                    <h3>And Profficient Instructor</h3>
+                                    <p>We have a qualified team of experts in required domains necessary for proper upbringing of every kid</p>
                                     <div className='teacher-btn default-btn'>
                                         <Link to={ROUTE_LINKS.HOME}>Instructor Profile</Link>
                                     </div>
@@ -317,7 +317,7 @@ const About = () => {
                         <div className='newsletter-area'>
                             <div className='about-container'>
                                 <div className='newsletter-content'>
-                                    <h2>Do You Want To Know Get Update What’s Upcoming</h2>
+                                    <h2>Do You Wish To Get Updates On What’s Upcoming?</h2>
                                 </div>
                                 <div className='newsletter-form-content'>
                                     <form action='' className='flex newsletter-form'>

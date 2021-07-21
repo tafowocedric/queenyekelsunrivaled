@@ -3,7 +3,7 @@ import PublicContainer from '../container/PublicContainer';
 
 const Service = () => {
     return (
-        <PublicContainer>
+        <PublicContainer footer footer_image>
             <div>Service</div>
         </PublicContainer>
     );

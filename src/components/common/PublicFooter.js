@@ -2,11 +2,11 @@ import React from 'react';
 import colors from '../utils/colors';
 import Icons from '../utils/Icons';
 
-import footer_1 from '../../assets/footer_1.webp';
-import footer_2 from '../../assets/footer_2.webp';
-import footer_3 from '../../assets/footer_3.webp';
-import footer_4 from '../../assets/footer_4.webp';
-import footer_5 from '../../assets/footer_5.webp';
+import footer_1 from '../../assets/gallery/Dormitory.jpg';
+import footer_2 from '../../assets/gallery/DSC_5098.jpg';
+import footer_3 from '../../assets/gallery/DSC_5100.jpg';
+import footer_4 from '../../assets/gallery/DSC_5097.jpg';
+import footer_5 from '../../assets/gallery/untitled-42836992.jpg';
 import { Link } from 'react-router-dom';
 import { ROUTE_LINKS } from '../../utils/routing';
 
@@ -47,8 +47,10 @@ const PublicFooter = ({ use_image }) => {
                         <Icons name='IconLocation' size={39} color={colors.light_red} />
                         <div className='content'>
                             <p>Address</p>
-                            <span>Bonamoussadi, Douala, Cameroon <br />200 Meters from
-Alimentation Fraicheur and Government English Primary School.</span>
+                            <span>
+                                Bonamoussadi, Douala, Cameroon <br />
+                                200 Meters from Alimentation Fraicheur and Government English Primary School.
+                            </span>
                         </div>
                     </div>
                 </div>

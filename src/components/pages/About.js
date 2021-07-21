@@ -5,12 +5,6 @@ import PublicContainer from '../container/PublicContainer';
 
 import '../../css/pages/About.css';
 
-import about_footer1 from '../../assets/about/about_footer1.jpg';
-import about_footer2 from '../../assets/about/about_footer2.jpg';
-import about_footer3 from '../../assets/about/about_footer3.jpg';
-import about_footer4 from '../../assets/about/about_footer4.jpg';
-import about_footer5 from '../../assets/about/about_footer5.jpg';
-
 import boss_img from '../../assets/about/bossyekel.png';
 
 import teacher_1 from '../../assets/about/teacher1.jpg';
@@ -69,7 +63,7 @@ const About = () => {
     return (
         <Fragment>
             <Spinner visible={showSpinner} className='full-width' size={56} />
-            <PublicContainer footer footer_image={[about_footer1, about_footer2, about_footer3, about_footer4, about_footer5]}>
+            <PublicContainer footer footer_image>
                 <div className='toast-container'>{toastState && Object.keys(toastState).map((key, i) => <Fragment key={i}>{toastState[key] && <Toast message={toastState[key]} iconName={toastType.icon} className={`nth-${i}`} type={toastType.type} toast_key={key} state={toastState} setState={setToastState} />}</Fragment>)}</div>
                 <Fragment>
                     <div className='about'>

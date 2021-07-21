@@ -8,13 +8,15 @@ import Button from '../utils/Button';
 import colors from '../utils/colors';
 import Icons from '../utils/Icons';
 
-import about_img from '../../assets/home/about-img.png';
-import class_1 from '../../assets/home/class-1.png';
-import class_2 from '../../assets/home/class-2.png';
-import class_3 from '../../assets/home/class-3.png';
-import team_1 from '../../assets/home/team_1.webp';
-import team_2 from '../../assets/home/team_2.webp';
-import team_3 from '../../assets/home/team_3.webp';
+import Home1 from '../../assets/gallery/untitled-43049280.jpg';
+import Home2 from '../../assets/gallery/DSC_5098.jpg';
+import Home3 from '../../assets/gallery/DSC_5105.jpg';
+import Home4 from '../../assets/gallery/untitled-42551296.jpg';
+
+import teacher1 from '../../assets/about/teacher1.jpg';
+import teacher2 from '../../assets/about/teacher2.jpg';
+import teacher3 from '../../assets/about/teacher3.jpg';
+import teacher4 from '../../assets/about/teacher4.jpg';
 
 const Home = () => {
     return (
@@ -78,7 +80,7 @@ const Home = () => {
                             </div>
                             <div className='col-lg-7 col-md-7 col-sm-7 col-xs-12'>
                                 <div className='about-img'>
-                                    <img src={about_img} alt='img' />
+                                    <img src={Home1} alt='img' />
                                 </div>
                             </div>
                         </div>
@@ -95,39 +97,30 @@ const Home = () => {
                         <div className='__class-offer-activities __features-container col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-center'>
                             <div className='features flex justify-space-between align-center'>
                                 <div className='card pd-b-10'>
-                                    <img src={class_1} alt='class' className='image-header' />
+                                    <img src={Home2} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
                                         <Link to={ROUTE_LINKS.NEWS}>
                                             <h3>Intelligence</h3>
                                         </Link>
                                         <p>Our academic programs aim to build communication skills, social and emotional skills, early reading and writing skills and motor skills in pupils. </p>
-                                        {/* <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
-                                            View More
-                                        </Button> */}
                                     </div>
                                 </div>
                                 <div className='card pd-b-10'>
-                                    <img src={class_2} alt='class' className='image-header' />
+                                    <img src={Home3} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
                                         <Link to={ROUTE_LINKS.NEWS}>
                                             <h3>Communication</h3>
                                         </Link>
                                         <p>Languages (English, French and Chinese) and information technology (IT) skills will be developed in the children.</p>
-                                        {/* <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
-                                            View More
-                                        </Button> */}
                                     </div>
                                 </div>
                                 <div className='card pd-b-10'>
-                                    <img src={class_3} alt='class' className='image-header' />
+                                    <img src={Home4} alt='class' className='image-header' />
                                     <div className='card-content features-caption'>
                                         <Link to={ROUTE_LINKS.NEWS}>
                                             <h3>A Solid Foundation</h3>
                                         </Link>
                                         <p>With a program like this, the children will have a solid foundation and will find little to no difficulties when they grow into different stages in life.</p>
-                                        {/* <Button type='link' className='btn btn-link enroll-now circle mg-t-10 flex justify-center' link='/news'>
-                                            View More
-                                        </Button> */}
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +158,7 @@ const Home = () => {
                         </div>
                         <div className='__team-active __features-container grid col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-center'>
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                <img src={team_1} alt='team' />
+                                <img src={teacher1} alt='team' />
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
@@ -186,7 +179,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                <img src={team_2} alt='team' />
+                                <img src={teacher2} alt='team' />
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
@@ -207,7 +200,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                <img src={team_3} alt='team' />
+                                <img src={teacher3} alt='team' />
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
@@ -228,7 +221,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
-                                <img src={team_1} alt='team' />
+                                <img src={teacher4} alt='team' />
                                 <div className='__profile'>
                                     <h3>Mr. Jason Clary</h3>
                                     <p>Sport Instructor</p>
@@ -263,7 +256,7 @@ const Home = () => {
                         </div>
                         <div className='flex align-center justify-center quote-details col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                             <div className='photo'>
-                                <img src={class_1} alt='img' />
+                                <img src={teacher1} alt='img' />
                             </div>
                             <div className='desc'>
                                 <p>Jason Miller</p>

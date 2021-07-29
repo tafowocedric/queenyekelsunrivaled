@@ -25,7 +25,7 @@ const PublicFooter = ({ use_image }) => {
             <div className='flex __footer-container align-start justify-space-between'>
                 <div className='queens'>
                     <h3 className='__title mg-b-20'>Queen Yekel's Unrivaled</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Quality education geared towards building well rounded people who will not become job seekers, but job creators.</p>
                 </div>
                 <div className='contact'>
                     <h3 className='__sub-title'>Contact Us</h3>
@@ -33,14 +33,15 @@ const PublicFooter = ({ use_image }) => {
                         <Icons name='IconCall' size={22} color={colors.light_red} />
                         <div className='content'>
                             <p>Phone</p>
-                            <span>695-944-232</span>
+                            <span>679-285-216 </span><br />
+                            <span>659-357-249</span>
                         </div>
                     </div>
                     <div className='flex align-center __email'>
                         <Icons name='IconMail' size={22} color={colors.light_red} />
                         <div className='content'>
                             <p>Email</p>
-                            <span>yekelunrivaled.com</span>
+                            <span>queenyekels@gmail.com</span>
                         </div>
                     </div>
                     <div className='flex align-center __address'>

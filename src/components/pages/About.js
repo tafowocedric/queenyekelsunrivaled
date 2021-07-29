@@ -154,13 +154,10 @@ const About = () => {
                         {/* SECTION THREE */}
                         <section className='teacher-area'>
                             <div className='about-container'>
-                                <div className='single-teacher-text-item'>
+                                <div className='single-teacher-text-item info'>
                                     <span>Expert Teachers</span>
-                                    <h3>And Profficient Instructor</h3>
+                                    <h3>And Profficient Instructors</h3>
                                     <p>We have a qualified team of experts in required domains necessary for proper upbringing of every kid</p>
-                                    <div className='teacher-btn default-btn'>
-                                        <Link to={ROUTE_LINKS.HOME}>Instructor Profile</Link>
-                                    </div>
                                 </div>
 
                                 <div className='single-teacher-item'>
@@ -169,7 +166,7 @@ const About = () => {
                                         <div className='overlay'>
                                             <div className='content'>
                                                 <h3>Dr. Bulu</h3>
-                                                <span>Music Teacher</span>
+                                                <span>Pediatrician</span>
                                                 <ul className='social'>
                                                     <li>
                                                         <Link to={ROUTE_LINKS}>
@@ -197,7 +194,7 @@ const About = () => {
                                         <div className='overlay'>
                                             <div className='content'>
                                                 <h3>Mrs. Forbah</h3>
-                                                <span>Music Teacher</span>
+                                                <span>Teaching Department</span>
                                                 <ul className='social'>
                                                     <li>
                                                         <Link to={ROUTE_LINKS}>
@@ -225,7 +222,7 @@ const About = () => {
                                         <div className='overlay'>
                                             <div className='content'>
                                                 <h3>Mr. Fridolin</h3>
-                                                <span>Music Teacher</span>
+                                                <span>Kitchen Department</span>
                                                 <ul className='social'>
                                                     <li>
                                                         <Link to={ROUTE_LINKS}>
@@ -253,7 +250,7 @@ const About = () => {
                                         <div className='overlay'>
                                             <div className='content'>
                                                 <h3>Mr. Edwin</h3>
-                                                <span>Music Teacher</span>
+                                                <span>Hygiene Department</span>
                                                 <ul className='social'>
                                                     <li>
                                                         <Link to={ROUTE_LINKS}>
@@ -281,7 +278,7 @@ const About = () => {
                                         <div className='overlay'>
                                             <div className='content'>
                                                 <h3>Mr. Harris</h3>
-                                                <span>Music Teacher</span>
+                                                <span>IT Department</span>
                                                 <ul className='social'>
                                                     <li>
                                                         <Link to={ROUTE_LINKS}>

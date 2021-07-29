@@ -90,8 +90,8 @@ const Home = () => {
                     <div className='grid container mg-t-70'>
                         <div className='__title-about col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-b-20'>
                             <div className='section-title'>
-                                <h2 className='mg-b-10'>Classes We Offer</h2>
-                                <p className='mg-b-10'>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+                                <h2 className='mg-b-10'>Courses We Offer</h2>
+                                <p className='mg-b-10'>At Queen Yekel's... Unrivaled, we offer a line up of deeply thought courses geared towards norturing pupils into well rounded individuals</p>
                             </div>
                         </div>
                         <div className='__class-offer-activities __features-container col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-center'>
@@ -135,11 +135,11 @@ const Home = () => {
                 <div className='date-events pd-t-80 pd-b-80'>
                     <div className='pd-r-20 pd-l-20'>
                         <div className='wrapper'>
-                            <span style={{ color: colors.light_red, fontWeight: '600' }}>18 Jan 2021</span>
+                            <span style={{ color: colors.light_red, fontWeight: '600' }}>2021</span>
                             <div className='__title-about'>
                                 <div className='section-title'>
-                                    <h2 className='mg-b-10'>Drawing Event</h2>
-                                    <p className='mg-b-10'>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today moving in fourth.</p>
+                                    <h2 className='mg-b-10'>Enrollment is Ongoing</h2>
+                                    <p className='mg-b-10'>Enrollment is currently going on at the school campus. Click on the button below to register your kid.</p>
                                 </div>
                                 <Button type='link' className='btn btn-link enroll-now circle mg-t-20 flex justify-center' link={ROUTE_LINKS.REGISTERATION}>
                                     Enroll Now
@@ -153,15 +153,15 @@ const Home = () => {
                         <div className='__title-about col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-b-20'>
                             <div className='section-title'>
                                 <h2 className='mg-b-10'>Expert Teachers</h2>
-                                <p className='mg-b-10'>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+                                <p className='mg-b-10'>Our staff is made up of highly trained and experienced teachers who have been exposed to internationally recognised programs for kids.</p>
                             </div>
                         </div>
                         <div className='__team-active __features-container grid col-lg-12 col-md-12 col-sm-12 col-xs-12 justify-center'>
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                 <img src={teacher1} alt='team' />
                                 <div className='__profile'>
-                                    <h3>Mr. Jason Clary</h3>
-                                    <p>Sport Instructor</p>
+                                    <h3>Dr. Bulu</h3>
+                                    <p>Pediatrician</p>
                                     <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
@@ -181,8 +181,8 @@ const Home = () => {
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                 <img src={teacher2} alt='team' />
                                 <div className='__profile'>
-                                    <h3>Mr. Jason Clary</h3>
-                                    <p>Sport Instructor</p>
+                                    <h3>Mr. Harris</h3>
+                                    <p>IT Department</p>
                                     <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
@@ -202,8 +202,8 @@ const Home = () => {
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                 <img src={teacher3} alt='team' />
                                 <div className='__profile'>
-                                    <h3>Mr. Jason Clary</h3>
-                                    <p>Sport Instructor</p>
+                                    <h3>Mr. Fridolin</h3>
+                                    <p>Kitchen Department</p>
                                     <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
@@ -223,8 +223,8 @@ const Home = () => {
                             <div className='team col-lg-3 col-md-3 col-sm-6 col-xs-12'>
                                 <img src={teacher4} alt='team' />
                                 <div className='__profile'>
-                                    <h3>Mr. Jason Clary</h3>
-                                    <p>Sport Instructor</p>
+                                    <h3>Mr. Edwin</h3>
+                                    <p>Hygiene Department</p>
                                     <div className='social-media flex justify-space-evenly'>
                                         <Link to=''>
                                             <Icons name='IconFacebook' size={20} color={colors.dark} />
@@ -251,7 +251,7 @@ const Home = () => {
                                 <div className='quote mg-b-10'>
                                     <img src='https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/xtestimonial.png.pagespeed.ic.U5crWWNOc7.webp' alt='quote' />
                                 </div>
-                                <p className='mg-t-20 mg-b-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, repellendus distinctio, nulla, ullam expedita eos rerum dolores libero nostrum voluptas dolorem recusandae excepturi fuga ducimus! Dolore at voluptas sint neque?</p>
+                                <p className='mg-t-20 mg-b-10'>The level of health awareness and sanitation which is upheld at Queen Yekel's... Unrivaled, is second to none within the country.</p>
                             </div>
                         </div>
                         <div className='flex align-center justify-center quote-details col-lg-12 col-md-12 col-sm-12 col-xs-12'>
@@ -259,8 +259,8 @@ const Home = () => {
                                 <img src={teacher1} alt='img' />
                             </div>
                             <div className='desc'>
-                                <p>Jason Miller</p>
-                                <p>Teacher</p>
+                                <p>Dr. Bulu</p>
+                                <p>Pediatrician</p>
                             </div>
                         </div>
                     </div>

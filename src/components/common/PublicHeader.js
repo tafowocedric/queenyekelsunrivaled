@@ -37,11 +37,11 @@ const PublicHeader = () => {
                     <div className='flex info align-center justify-space-between'>
                         <div className='flex icon-container align-center mg-r-40'>
                             <Icons name='IconLocation' size={15} color={colors.white} />
-                            <span className='mg-l-15'>57/A, GREENLANCE, NYC</span>
+                            <span className='mg-l-15'>BONAMOUSSADI, DOUALA, CMR</span>
                         </div>
                         <div className='flex icon-container align-center'>
                             <Icons name='IconCall' size={15} color={colors.white} />
-                            <span className='mg-l-15'>+10 (78) 367 3692</span>
+                            <span className='mg-l-15'>(+237) 679285216 | 659357249</span>
                         </div>
                     </div>
                     <div className='flex social-media'>
@@ -72,7 +72,7 @@ const PublicHeader = () => {
                                 <span>About</span>
                             </Button>
                             <Button type='link' link={ROUTE_LINKS.FAQ} className='btn btn-link mg-r-20'>
-                                <span>Faq</span>
+                                <span>FAQ</span>
                             </Button>
                             <Button type='link' link={ROUTE_LINKS.NEWS} className='btn btn-link mg-r-20'>
                                 <span>News</span>

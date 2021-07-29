@@ -30,11 +30,11 @@
 .faq .page-banner-content ul li {
     padding: 0 15px;
     font-weight: 600;
-    color: #ea512e;
+    color: #ef558a;
 }
 
 .faq .page-banner-content ul li:nth-child(2) {
-    border-left: 1px solid #ea512e;
+    border-left: 1px solid #ef558a;
 }
 
 /* SECTION ONE */
@@ -90,7 +90,7 @@
 .faq-accordion .accordion .accordion-content {
         /* position: relative; */
     padding: 18px 20px;
-    border-top: 1px solid #f5890d;
+    border-top: 1px solid #ef558a;
     color: #6b6b84;
     font-size: 15px;
 }

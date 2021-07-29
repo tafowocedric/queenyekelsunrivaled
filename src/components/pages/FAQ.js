@@ -64,7 +64,7 @@ Alimentation Fraicheur and Government English Primary School
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='2'>
                                             Submit Application Online
                                         </h5>
-                                        {activeTab === '2' && <p className='accordion-content'>You can apply directly by filling and submiting the form on the enrol now tab</p>}
+                                        {activeTab === '2' && <p className='accordion-content'>You can apply directly by filling and submiting the form on the "enrol now" tab</p>}
                                     </li>
                                 </ul>
                                 <ul className='accordion'>
@@ -73,26 +73,25 @@ Alimentation Fraicheur and Government English Primary School
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='3'>
                                             Kids eligible for opportunity
                                         </h5>
-                                        {activeTab === '3' && <p className='accordion-content'>Our focus is, to a larger extent, on children within the age group of 6 months and 3 years</p>}
+                                        {activeTab === '3' && <p className='accordion-content'>Our focus is on children within the age group of 6 months and 3 years</p>}
                                     </li>
                                 </ul>
                                 <ul className='accordion'>
                                     <li className='accordion-item'>
                                         {/* <a href="" className="accordion-title"></a> */}
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='4'>
-                                            Register at Your Assign Class
+                                            Is there a resident doctor on campus?
                                         </h5>
-                                        {activeTab === '4' && <p className='accordion-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>}
+                                        {activeTab === '4' && <p className='accordion-content'>Yes, there is a Pediatrician who is always available to take care of the kids' health needs.</p>}
                                     </li>
                                 </ul>
                                 <ul className='accordion'>
-                                    <li className='accordion-item'>
-                                        {/* <a href="" className="accordion-title"></a> */}
+                                    {/* <li className='accordion-item'>
                                         <h5 className='accordion-title' onClick={handleContextToggler} id='5'>
                                             Go Online Live Class
                                         </h5>
                                         {activeTab === '5' && <p className='accordion-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>}
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>

@@ -11,6 +11,9 @@ import useForm from '../../hooks/useForm';
 import validate from '../../hooks/FormValidation';
 import { forwardMail } from '../../api';
 
+import Icons from '../utils/Icons'
+import colors from '../utils/colors';
+
 const ContactUs = () => {
     const [showSpinner, setShowSpinner] = useState(false);
     const [toastState, setToastState] = useState({});
@@ -73,7 +76,7 @@ const ContactUs = () => {
                             <div className='container'>
                                 <div className='align-items-center'>
                                     <div className='contact-form'>
-                                        <h3>Ready to get Started?</h3>
+                                        <h3>To Contact Us,<br /> fill and submit the form below</h3>
                                         <form action='' id='contactForm'>
                                             <div className='row'>
                                                 <div className='form-item'>
@@ -125,53 +128,52 @@ const ContactUs = () => {
                                         <div className='contact-list'>
                                             <li>
                                                 <div>
+                                                    <Icons name='IconLocation' size={39} color={colors.light_red} />
                                                     <p>
                                                         location: <span>Bonamoussadi, Douala, Cameroon. <br />200 METERS FROM
-ALIMENTATION FRAICHEUR AND GOVERNMENT ENGLISH PRIMARY SCHOOL.</span>
+                                                        ALIMENTATION FRAICHEUR AND GOVERNMENT ENGLISH PRIMARY SCHOOL.</span>
                                                         
                                                     </p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
+                                                    <Icons name='IconCall' size={39} color={colors.light_red} />
                                                     <p>
-                                                        Call Us: <span>(+237) 695-944-232</span>
+                                                        Call Us: <span>(+237) 679285216 | 659357249</span>
                                                     </p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div>
+                                                    <Icons name='IconMail' size={39} color={colors.light_red} />
                                                     <p>
-                                                        Email Us: <span>yekelunrivaled@gmail.com</span>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div>
-                                                    <p>
-                                                        POBOX: <span>--</span>
+                                                        Email Us: <span>queenyekels@gmail.com</span>
                                                     </p>
                                                 </div>
                                             </li>
                                         </div>
-                                        <h3>Opening Hours</h3>
+                                        <h3>Day Care Time</h3>
                                         <div className='opening-hours'>
                                             <li>
                                                 <p>
-                                                    <span>Monday: </span>8AM - 2PM
-                                                </p>
+                                                    <span>Monday - Friday </span>8AM - 5PM
+                                                </p>                                                
+                                            </li>
+                                        </div>
+                                        <h3>Learning Time</h3>
+                                        <div className='opening-hours'>
+                                            <li>
                                                 <p>
-                                                    <span>Tuesday: </span>8AM - 2PM
+                                                    <span>Monday - Friday </span>8AM - 1PM
                                                 </p>
+                                            </li>
+                                        </div>
+                                        <h3>Dumping Ground</h3>
+                                        <div className='opening-hours'>
+                                            <li>
                                                 <p>
-                                                    <span>Wednesday: </span>8AM - 2PM
-                                                </p>
-                                                <p>
-                                                    <span>Thursday: </span>8AM - 2PM
-                                                </p>
-                                                <p><span>Friday: </span>8AM - 2PM</p>
-                                                <p>
-                                                     <span>Saturday: </span>8AM - 12PM
+                                                    <span>Saturday: </span>8AM - 5PM
                                                 </p>
                                             </li>
                                         </div>

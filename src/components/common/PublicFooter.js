@@ -2,11 +2,11 @@ import React from 'react';
 import colors from '../utils/colors';
 import Icons from '../utils/Icons';
 
-import footer_1 from '../../assets/footer_1.webp';
-import footer_2 from '../../assets/footer_2.webp';
-import footer_3 from '../../assets/footer_3.webp';
-import footer_4 from '../../assets/footer_4.webp';
-import footer_5 from '../../assets/footer_5.webp';
+import footer_1 from '../../assets/gallery/Dormitory.jpg';
+import footer_2 from '../../assets/gallery/DSC_5098.jpg';
+import footer_3 from '../../assets/gallery/DSC_5100.jpg';
+import footer_4 from '../../assets/gallery/DSC_5097.jpg';
+import footer_5 from '../../assets/gallery/untitled-42836992.jpg';
 import { Link } from 'react-router-dom';
 import { ROUTE_LINKS } from '../../utils/routing';
 
@@ -25,7 +25,7 @@ const PublicFooter = ({ use_image }) => {
             <div className='flex __footer-container align-start justify-space-between'>
                 <div className='queens'>
                     <h3 className='__title mg-b-20'>Queen Yekel's Unrivaled</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Quality education geared towards building well rounded people who will not become job seekers, but job creators.</p>
                 </div>
                 <div className='contact'>
                     <h3 className='__sub-title'>Contact Us</h3>
@@ -33,21 +33,25 @@ const PublicFooter = ({ use_image }) => {
                         <Icons name='IconCall' size={22} color={colors.light_red} />
                         <div className='content'>
                             <p>Phone</p>
-                            <span>882-569-756</span>
+                            <span>679-285-216 </span><br />
+                            <span>659-357-249</span>
                         </div>
                     </div>
                     <div className='flex align-center __email'>
                         <Icons name='IconMail' size={22} color={colors.light_red} />
                         <div className='content'>
                             <p>Email</p>
-                            <span>example@example.com</span>
+                            <span>queenyekels@gmail.com</span>
                         </div>
                     </div>
                     <div className='flex align-center __address'>
                         <Icons name='IconLocation' size={39} color={colors.light_red} />
                         <div className='content'>
                             <p>Address</p>
-                            <span>175 5th Ave Premium Area, New York, NY 10010, United States</span>
+                            <span>
+                                Bonamoussadi, Douala, Cameroon <br />
+                                200 Meters from Alimentation Fraicheur and Government English Primary School.
+                            </span>
                         </div>
                     </div>
                 </div>

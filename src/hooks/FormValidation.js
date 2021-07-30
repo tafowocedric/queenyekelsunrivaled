@@ -44,6 +44,26 @@ export default function validate(values, validationList) {
                 if (!values.signature) errors.signature = 'Name of certifier is required';
                 break;
 
+            case 'name':
+                if (!values.name) errors.name = 'Name is required';
+                break;
+
+            case 'email':
+                if (!values.email) errors.email = 'Email is required';
+                break;
+
+            case 'phone':
+                if (!values.phone) errors.phone = 'Phone is required';
+                break;
+
+            case 'subject':
+                if (!values.subject) errors.subject = 'Subject is required';
+                break;
+
+            case 'message':
+                if (!values.message) errors.message = 'Enter Message';
+                break;
+
             default:
                 break;
         }

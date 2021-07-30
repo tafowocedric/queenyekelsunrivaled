@@ -1,0 +1,106 @@
+/* FAQ PAGE BANNER */
+
+.faq .page-banner-area {
+    background-attachment: fixed;
+    background-image: url('../../assets/gallery/DSC_5104.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+}
+
+.faq .page-banner-content h2 {
+    color: #fff !important;
+    font-size: 45px;
+}
+
+.faq .page-banner-content {
+    text-align: center;
+}
+
+.faq .page-banner-content ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.faq .page-banner-content ul li {
+    padding: 0 15px;
+    font-weight: 600;
+    color: #ef558a;
+}
+
+.faq .page-banner-content ul li:nth-child(2) {
+    border-left: 1px solid #ef558a;
+}
+
+/* SECTION ONE */
+
+.faq .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.faq .container .section-title {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.faq .container .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.faq .container .row .faq-image {
+    flex: 1 0 40%;
+    background-image: url('../../assets/faq/question.jpg');
+    background-size: cover;
+    padding: 0 12px;
+}
+
+.faq .container .row .faq-accordion {
+    flex: 1 0 40%;
+    padding: 0 12px;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+    padding: 30px;
+    cursor: pointer;
+}
+
+.faq .faq-accordion .accordion .accordion-item {
+    display: block;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 10px;
+}
+
+.faq-accordion .accordion .accordion-title {
+    padding: 25px 40px 20px 20px;
+    color: #1b0238;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.faq-accordion .accordion .accordion-content {
+        /* position: relative; */
+    padding: 18px 20px;
+    border-top: 1px solid #ef558a;
+    color: #6b6b84;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .faq .container .row {
+        flex-direction: column;
+    }
+
+    .faq .container .row .faq-image {
+        flex-basis: 400px;
+    }
+}

@@ -4,6 +4,14 @@ header.queen-header
     width: 100%
     height: fit-content
 
+    &.float-display
+        position: fixed
+        top: 0
+        opacity: 0
+        z-index: 1
+        transform: translateY(-109px)
+        animation: slideDowm .57s ease-in-out forwards
+
     .__sub-header-container
         background-color: $red
         color: $white
@@ -40,9 +48,9 @@ header.queen-header
         height: fit-content
 
         img.logo
-            width: pxToRem(55px)
+            width: pxToRem(120px)
             height: pxToRem(55px)
-            object-fit: contain
+            object-fit: fill
 
         @include breakpoint($breakpoint-small-screen-laptop, true)
             padding: 8px pxToRem(210px)
@@ -53,7 +61,7 @@ header.queen-header
             font-size: pxToRem(10px)
 
             img.logo
-                width: pxToRem(45px)
+                width: pxToRem(90px)
                 height: pxToRem(45px)
 
             .btn
@@ -142,3 +150,12 @@ header.queen-header
                         padding-top: 10px
                         z-index: 2
                         overflow: hidden
+
+@keyframes slideDowm
+    0%
+        height: 0
+
+    100%
+        opacity: 1
+        transform: translateY(0px)
+        box-shadow: $box-shadow
